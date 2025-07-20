@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.setting-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+.setting-btn:hover {
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.profile-info {
+  margin-left: 1rem;
+}
+
+.profile-info h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.acct {
+  color: #0078d4;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+#wrb {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrbs {
+  flex: 1 1 200px;
+  min-width: 180px;
+  height: auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.wrbs:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.search {
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 5px;
+  border: 1px solid #bb09df;
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.container:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  #wrb {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wrbs {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .search {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
